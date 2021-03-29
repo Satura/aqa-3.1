@@ -3,7 +3,7 @@ services:
   postgresql:
     image: postgres:12-alpine
     ports:
-      - 5432:5432
+      - 8080:8080
     environment:
       - POSTGRES_DB=app
       - POSTGRES_USER=app
