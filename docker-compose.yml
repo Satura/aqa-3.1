@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+  postgresql:
+    image: postgres:12-alpine
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_DB=app
+      - POSTGRES_USER=app
+      - POSTGRES_PASSWORD=9mREsvXDs9Gk89Ef
+  node-app:
+    build: node
+    image: node-app:1.0
+    ports:
+      - '9999:9999'
