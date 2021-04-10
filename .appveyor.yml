@@ -13,7 +13,7 @@ install:
   - sudo chmod +x /usr/local/bin/docker-compose
   - docker-compose up -d
   - docker ps
-  - netstat -na | grep "8080"
+  - netstat -na | grep "5432"
   - sudo apt-get -qq update
   - sudo apt-get install wait-for-it > /dev/null
 
